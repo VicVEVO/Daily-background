@@ -6,7 +6,7 @@ today_is_video=false
 random_apod=false
 
 if [ -z "$1" ]; then
-  echo "No argument supplied" && exit
+  echo "No argument supplied, you must enter : ./apod.sh FOLDER_PATH" && exit
 else
   TARGETDIR="$1"
 fi
