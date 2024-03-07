@@ -1,4 +1,4 @@
-# Daily background downloader
+# Daily wallpaper downloader
 
 This script downloads NASA's Astronomy Picture of the Day, so you can put it in your **configs/Execs.conf** to download it at launch.
 
