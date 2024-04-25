@@ -16,7 +16,7 @@ date=$(echo $apodjson | json_pp | grep "\"date\"" | awk -F '"' '{print $4}')
 media_type=$(echo $apodjson | json_pp | grep "\"media_type\"" | awk -F '"' '{print $4}')
 hdurl=$(echo $apodjson | json_pp | grep "\"hdurl\"" | awk -F '"' '{print $4}')
 
-# Download today's image
+#Download today's image
 if [ $media_type == "image" ]; then
   curl -o $TARGETDIR/${date}.jpg ${hdurl}
 else
