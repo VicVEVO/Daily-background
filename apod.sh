@@ -22,6 +22,3 @@ if [ $media_type == "image" ]; then
 else
   echo "Today APOD is not an image."
 fi
-
-# Clean outdated images
-find $TARGETDIR -mtime +$(($screen_num + 3)) -exec rm {} \;
